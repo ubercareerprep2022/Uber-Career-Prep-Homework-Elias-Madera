@@ -86,7 +86,7 @@ vector<pair<int,int> > pairsThatEqualSum(vector<int> inputArray, int targetSum){
 
     }
 
-    // time complexity: nlog(n) | "n" = size of inputArray
+    // time complexity: O(nlog(n)) | "n" = size of inputArray
     // space complexity: O(n)
 
     return outputArray;
@@ -141,7 +141,7 @@ bool isStringPermutation(string str1, string str2){
 
     }
 
-    // time complexity: nlog(n) | "n" = maximum between the size of 'str1' and 'str2'
+    // time complexity: O(nlog(n)) | "n" = maximum between the size of 'str1' and 'str2'
     // space complexity: O(n)
 
     return ans; // since c++ handles booleans as "0" or "not 0", the function will return "0" if false or "1" if ture
