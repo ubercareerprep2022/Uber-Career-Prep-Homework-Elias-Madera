@@ -4,7 +4,7 @@ void printArray(vector<pair<int,int> > Example){
 
     /*
 
-    Function hat takes a vector of pairs of integers and prints it in the console.
+    Function that takes a vector of pairs of integers and prints it in the console.
 
     */
 
@@ -36,7 +36,7 @@ vector<pair<int,int> > pairsThatEqualSum(vector<int> inputArray, int targetSum){
 
     The following solution assumes:
 
-    1.-Data size does fits in an integer variable.
+    1.-Data fits in an integer variable.
     2.-Only a unique pair is counted as a solution/sum of the target integer.
     3.-A pair (a,b) is not different from pair (b,a).
 
@@ -170,8 +170,8 @@ void testingExamples(){
     cout<<"Input array: [1,2,3], target sum: 0"<<endl;
     Example = pairsThatEqualSum({1,2,3},0);
     printArray(Example);
-    cout<<"Input array: [], target sum: 3"<<endl;
-    Example = pairsThatEqualSum({},3);
+    cout<<"Input array: [3,3,4,4], target sum: 6"<<endl;
+    Example = pairsThatEqualSum({3,3,4,4},6);
     printArray(Example);
 
 
