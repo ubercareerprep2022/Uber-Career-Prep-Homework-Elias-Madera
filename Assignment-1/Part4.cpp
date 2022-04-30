@@ -111,7 +111,7 @@ struct Node{
         returns if the list is a palindrome by inserting the elements in 2 dequeues.
 
         Time complexity: O(n) where n is the size of the list.
-        Space complexity: O(n) , which could be lowered to O(1) by reversing the linked list in position, but I could not figure how to return
+        Space complexity: O(n) , which could be lowered to O(1) by reversing the second half of the linked list in position, but I could not figure how to return
                                 it to its original position after calling the function.
 
 */
@@ -478,10 +478,12 @@ struct Linkedlist{
             
         }
         for(int i = 0; i < size()/2; ++i){
-
+    
             if(half1.front() != half2.front()){
                 ans = false;
             }
+            half1.pop_front();
+            half2.pop_front();
 
         }
 
@@ -578,10 +580,12 @@ void testing(){
 
         cout<<"hasCycle: "<<testList.hasCycle()<<endl;
 
-// Delete pointers:
+// Free memory:
 
         delete(node1);
         delete(node2);
+        testList.deleteList();
+
 
 }
 int main(){
